@@ -43,8 +43,75 @@ html {
 *, *::before, *::after {
     box-sizing: inherit;
 }
+body {
+  background-image: url(../img/jpg/1920\ 1.jpg);
+  background-size: cover;       
+  background-repeat: no-repeat; /* Убрать повторение (плитку) */
+  background-attachment: fixed; /* Фон не скроллится вместе с текстом (опционально) */ 
+}
+/* Header start */
 .header {
     max-height: 88px;
-    background-color: #0F0F0F;
-    padding: 0px 50px 0px 50px;
+    padding: 0px 70px 0px 70px;
+    margin-top: 0px;
+    color: white;
 }
+.header__wrapper {
+  display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 88px;
+}
+.header__logo {
+  filter: drop-shadow(0 0 15px rgba(0, 255, 0, 1));
+}
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  max-width: 500px;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.header_menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+
+}
+.header__lines {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.header__line {
+  display: block;
+  width: 32px;
+  height: 1px; /* Толщина полосок */
+  background-color: #ffffff; /* Цвет полосок */
+  border-radius: 2px; /* Легкое скругление краев (по желанию) */
+}
+.header__menu {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+/* Header end */
+
+/* Hero start*/
+/* .hero__item {
+  max-width: 1920px;
+  max-height: 1080px;
+  
+} */
