@@ -44,11 +44,7 @@ html {
     box-sizing: inherit;
 }
 body {
-  /* background-image: url(../img/jpg/1920\ 1.jpg);
-  background-size: cover;        
-  background-repeat: no-repeat; 
-  background-attachment: fixed; 
-   max-width: 1920px; */
+  margin-top: 0px;
 }
 /* Header start */
 .header {
