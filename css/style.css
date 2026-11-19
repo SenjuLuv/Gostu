@@ -44,29 +44,36 @@ html {
     box-sizing: inherit;
 }
 body {
-  background-image: url(../img/jpg/1920\ 1.jpg);
-  background-size: cover;       
-  background-repeat: no-repeat; /* Убрать повторение (плитку) */
-  background-attachment: fixed; /* Фон не скроллится вместе с текстом (опционально) */
-  background-size: 100% 100%;  
+  /* background-image: url(../img/jpg/1920\ 1.jpg);
+  background-size: cover;        
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+   max-width: 1920px; */
 }
 /* Header start */
 .header {
-    max-height: 88px;
-    padding: 0px 50px 0px 50px;
-    margin-top: 0px;
-    color: white;
+ background-image: url(../img/jpg/1920\ 1.jpg);
+  background-size: cover;        
+  background-repeat: no-repeat; 
+   max-width: 1920px;
+   height: 1080px;
+   margin: 0 auto;
+   z-index: 1;
 }
 .header__wrapper {
   display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 88px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 88px;
+  background-color: rgba(15, 15, 15, 0.5); /* прозрачность только фона */
+  padding: 0 50px;
 }
+
 .header__logo {
   filter: drop-shadow(0 0 15px rgba(0, 255, 0, 1));
 }
+
 .header__nav {
   display: flex;
   flex-direction: row;
@@ -77,18 +84,24 @@ body {
   font-weight: 500;
   font-size: 18px;
 }
+
 ul {
   list-style-type: none;
 }
+
 a {
   text-decoration: none;
-  color: white;
+}
+
+.nav__link {
+  color: #ffffff;   /* просто белый, без тени и свечения */
 }
 .header_menu {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 6px;
+  color: #ffffff;
 
 }
 .header__lines {
