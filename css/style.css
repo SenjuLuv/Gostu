@@ -167,7 +167,7 @@ padding: 24px 35px; /* Подберите под ваш макет (высота
   margin: 0 auto; 
   max-width: 1200px; 
   width: 100%;
-  
+  margin-bottom: 100px;
   flex-shrink: 0;
 }
 
@@ -246,3 +246,66 @@ padding: 24px 35px; /* Подберите под ваш макет (высота
    margin-top: 30px;
 }
 /* Hero end */
+
+/* About start */
+
+.about{
+  margin: 0 auto;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+.about__info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+   row-gap: 80px;
+   align-items: center;
+}
+.firstpromo {
+  max-width: 960px;
+  max-height: 440px;
+    border-radius: 70px;
+}
+.zone__text, .about__contacts, .devices__text {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: white;
+}
+.about__zone, .about_devices {
+  display: flex;
+  text-align: start;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 567px;
+  margin-left: 280px;
+}
+.zone__img, .contacts__img {
+  max-width: 76px;
+  max-height: 76px;
+}
+.bold__contacts {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+}
+.about_devices {
+  display: flex;
+  text-align: start;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 567px;
+  margin-left: 280px;
+}
+.devices__heading {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  color: white;
+  text-transform: uppercase;
+  margin: 0px;
+}
+.heading__green {
+  color: #AC24FF;
+}
+/* About end */
